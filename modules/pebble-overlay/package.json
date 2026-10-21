@@ -1,0 +1,11 @@
+{
+  "name": "pebble-overlay",
+  "version": "1.0.0",
+  "description": "Android floating pet and iPhone widget bridge for Pebble. Missing in Expo Go.",
+  "main": "index.js",
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
