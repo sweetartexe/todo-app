@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Pebble",
+    "slug": "pebble",
+    "scheme": "pebble",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF6EA"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.pebble.todo",
+      "infoPlist": {
+        "NSSupportsLiveActivities": true
+      },
+      "entitlements": {
+        "com.apple.security.application-groups": ["group.app.pebble.todo"]
+      }
+    },
+    "android": {
+      "package": "app.pebble.todo",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFF6EA"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "SYSTEM_ALERT_WINDOW",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_SPECIAL_USE",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "@bacons/apple-targets",
+      "./plugins/withPebbleAndroid.js"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
